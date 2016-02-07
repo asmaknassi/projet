@@ -1,0 +1,36 @@
+Annexe 1: Installation de TinyOS-2.1.2
+
+Installation des paquets Ubuntu
+
+1-Avant d'installer Tinos sur ubuntu 14.04 il faut inclure les adresses suivantes dans le fichier source référentiel sources.list.
+Cela en éditant le fichier / etc / apt /sources.list comme suit:
+Ensuite, vous allez obtenir une boîte de dialogue comme ci-dessous comme celle présentée ci-dessous:
+
+2-Inclure les lignes suivantes à la fin du script :
+3-Enregistrer et fermer l'application "gedit".
+4-Ouvrir la console de terminal et exécutez les commandes suivantes:
+Ensuite, vous aurez à une liste des versions de Tinos disponibles tel que présenté ci-dessous:
+5-Exécuter les commandes suivantes pour installer Tinos 2.1.2. Lors de cette étape peut-être vous serez invité à entrer le mot de
+passe d'administration.
+6- Exécuter les commandes suivantes, ceci permettra l'installation des derniers outils de MSPGCC, Cela va ajouter la dernière Tinos
+ code, qui comprennent les nouveaux pilotes de puces msp430x afin d'être en mesure de compiler les iris des plateformes comme suit:
+7-Maintenant, utilisez la console du terminal et exécutez la commande suivante, allé à l'intérieur de l’installation de TinyOS, 
+comme suit:
+8-Maintenant, voir la liste des fichiers en utilisant la commande ls et vérifier si il ya un fichier nommé ' tinyos.sh '.
+Si ce n’est pas le cas il faut le  créer. Ceci peut être accompli en utilisant gedit, il faut s’assurer que le contenu de 
+' tinyos.sh'correspond avec le contenu ci-dessous:
+9-Enregistrez le fichier et quitter
+10-Maintenant, utilisez la console du terminal et exécutez la commande suivante, allé à l'intérieur de l’installation de TinyOS, 
+comme suit:
+11-Maintenant, la liste des fichiers en utilisant la commande ls et vérifier si il ya un fichier nommé ' tinyos.sh '. 
+Si ce n’est pas le cas il faut le  créer. Ceci peut être accompli en utilisant gedit, il faut s’assurer que le contenu de
+' tinyos.sh'correspond avec le contenu ci-dessous:
+12-Enregistrez le fichier et quitter
+13- Maintenant, utilisez la console du terminal et exécutez les commandes suivantes
+12-Enregistrez le fichier et quitter
+13- Maintenant, utilisez la console du terminal et exécutez les commandes suivantes
+14-Afin d’utiliser ce dossier comme chemin de TinyOS ROOT, ouvrir la console de terminal et exécuter la commande suivante:
+15-Ajouter les lignes suivantes à la fin du document qui s’ouvre:
+17 Enregistrez le fichier et fermez l'éditeur. Fermez la console de terminal et redémarrez le PC.
+
+
