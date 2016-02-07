@@ -1,0 +1,29 @@
+Le système d’exploitation TinyOS
+
+TinyOS est un système d’exploitation intégré, modulaire, destiné aux réseaux de
+capteurs miniatures. Cette plate-forme logicielle ouverte et une série d’outils développés par
+l’Université de Berkeley est enrichie par une multitude d’utilisateurs. En effet, TinyOS est le
+plus répandu des systèmes d'exploitation pour les réseaux de capteurs sans fils. Il est utilisé
+dans les plus grands projets de recherches sur le sujet (plus de 10.000 téléchargements de la
+nouvelle version). Un grand nombre de ces groupes de recherches ou entreprises participent
+activement au développement de cet OS (Operating System) en fournissant de nouveaux
+modules, de nouvelles applications,... Cet OS est capable d’intégrer très rapidement les
+innovations en relation avec l’avancement des applications et des réseaux eux même tout en
+minimisant la taille du code source en raison des problèmes inhérents de mémoire dans les
+réseaux de capteurs. La librairie TinyOS comprend les protocoles réseaux, les services de
+distribution, les drivers pour capteurs et les outils d’acquisition de données. TinyOS est en
+grande partie écrit en C mais on peut très facilement créer des applications personnalisées en
+langages C, NesC, et Java.
+
+Le langage de programmation de TinyOS: NesC
+
+Une application NesC consiste en un ou plusieurs composants assemblés pour former
+un exécutable. Un composant, du point de vue programmation, est composé de plusieurs
+sections, il offre et utilise des interfaces qui sont son unique point d’accès. Il existe deux types
+de composants : modules et configurations.
+Modules : sont des composants qui définissent le code de l’application en
+implémentant une ou plusieurs interfaces.
+Configurations : sont des composants qui assemblent les composants de
+l’application, en reliant les interfaces utilisées par des composants aux interfaces
+offertes par d’autres composants. Les éléments connectés doivent être compatibles :
+"Interface" à "interface", "command" à "command", "event" à "event"
