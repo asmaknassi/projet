@@ -19,4 +19,7 @@ liens utils::
 -http://www.irisa.fr/prive/bcousin/Enseignement/2011-2012/R%C3%A9seaux%20de%20Capteurs.Presentation.2P.pdf
 -https://tel.archives-ouvertes.fr/tel-00650839/document
 -http://www-igm.univ-mlv.fr/~dr/XPOSE2006/Bunel/DomainesContraintes.html
-
+-UC Berkeley, “Smart dust : Autonomous sensing and communication in a cubic millimeter.” robotics.eecs.berkeley.edu/ pister/SmartDust.
+- P. Levis, N. Lee, M. Welsh, and D. Culler, “Tossim : accurate and scalable simulation of entire tinyos applications,” in SenSys ’03 : Proceedings of the 1st international
+conference on Embedded networked sensor systems. New York, NY, USA : ACM Press, pp. 126–137.
+-TinyOS Team, “Tinyos.” www.tinyos.net
