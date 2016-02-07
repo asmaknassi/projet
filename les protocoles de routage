@@ -1,0 +1,64 @@
+Les protocoles de routage dans les réseaux de capteurs
+
+La propagation et la délivrance des données dans un RCSF représente la fonctionnalité la plus importante du réseau. Elle doit prendre en considération toutes les caractéristiques des capteurs afin d'assurer les meilleures performances du système : durée de vie, fiabilité, temps de réponse, ... etc. Vu la spécificité des RCSF, un nombre important de recherches sont orientées vers une violation du découpage en couches protocolaires indépendantes, et introduisent la notion de cross layer optimization. Par exemple, en utilisant des mécanismes d'agrégation, les routeurs intermédiaires doivent accéder à la donnée afin d'établir des résumés des lectures de la région.
+
+Topologie hiérarchique : afin d'augmenter la scalabilité du système, les topologies hiérarchiques ont été introduites en divisant les noeuds en plusieurs niveaux de responsabilité. L'une des méthodes les plus employées est le clustering, où le réseau est partitionné en groupes appelés "clusters". Un cluster est constitué d'un chef (cluster-head) et de ses membres.
+
+
+Les différents protocoles de routage
+
+LEACH:
+
+LEACH (Low-Energy Adaptive Clustering Hierarchy) est un protocole de routage hiérarchique, employant un procédé de clustering qui divise le réseau en deux niveaux : les cluster-heads et les noeuds membres. Le protocole se déroule en rounds. Chaque round se compose de deux phases : construction et communication.
+
+Phase de construction:
+
+Le but de cette phase est la construction des clusters en choisissant les chefs et en établissant la politique d'accès au média au sein de chaque groupe. Cette phase commence par la prise de décision locale pour devenir cluster-head. Chaque noeud n choisit un nombre aléatoire, si ce nombre est inférieur à une valeur T (n), le noeud devient cluster-head. T (n) est définie comme suit :
+ 
+avec :
+•	P : pourcentage désiré de cluster-heads pendant un round.
+•	r : numéro du round.
+•	G : l'ensemble des noeuds qui n'ont pas été élu cluster-heads pendant les 1/P rounds précédents. Par la suite, chaque noeud qui s'est élu cluster-head émet un message de notification. Les noeuds membres récoltent les messages de notification, et décident leur appartenance à un cluster. La décision est basée sur l'amplitude du signal reçu : le cluster-head ayant le signal le plus fort est choisi (i.e. le plus proche). En cas d'égalité, un chef aléatoire est choisi. Chaque membre informe son chef de sa décision. Toutes les communications précédentes étant faite dans une topologie plate, la méthode CSMA doit être employée. Par la suite, les communications au sein d'un cluster peuvent être faites avec la méthode TDMA. Pour cela, chaque chef établie un schedule TDMA pour ses membres, en indiquant pour chaque noeud son slot d'émission. Ce schedule est envoyé aux membres.
+
+Phase de communication:
+
+En utilisant le schedule TDMA, les membres émettent leurs données captées pendant leurs propres slots. Cela leur permet d'éteindre leur interface de communication en dehors de leurs slots réservés, afin d'économiser leur énergie. Ces informations sont ensuite agrégées, pour être transmises au collecteur (sink). Cette communication, entre un cluster-head et le collecteur, se fait d'une manière directe, i.e. : le cluster-head adapte son émetteur radio afin d'atteindre directement le collecteur.
+
+PEGASIS
+
+Power-Efficient Gathering in Sensor Information Systems (PEGASIS) est une version
+améliorée du protocole LEACH. PEGASIS forme des chaînes plutôt que des clusters de
+noeuds de capteurs afin que chaque noeud transmette et reçoive uniquement des données d’un
+voisin. Un seul noeud est sélectionné à partir de cette chaîne pour transmettre à la station de
+base. L’idée de PEGASIS est qu’il utilise tous les noeuds pour transmettre ou recevoir des
+données avec ses plus proches voisins. Il déplace les données reçues de noeud à noeud, puis les données seront agrégées jusqu’à ce qu’elles atteignent tous la station de base. Donc, chaque noeud du réseau est tour à tour un chef de file de la chaîne, ainsi que responsable pour
+transmettre l’ensemble des données recueillies et fusionnées par la chaîne de noeuds au niveau de la station de base.
+Une variante de PEGASIS appelée Hierarchical PEGASIS a été conçue afin
+d’améliorer PEGASIS.
+
+TEEN
+
+En utilisant TDMA, le protocole LEACH est destiné aux applications time-driven. Dans ce type d'application, la donnée est propagée d'une manière périodique. Cependant, ce genre de protocole est inadapté pour les applications event-driven, où un comportement réactif est nécessaire pour le bon fonctionnement du système. TEEN (Threshold sensitive Energy Efficient sensor Network protocol ) a été développé pour modeler LEACH afin de répondre aux exigences des applications event-driven.
+
+APTEEN
+
+APTEEN est une extension du TEEN basée sur la capture périodique des données et
+réaction aux événements temps-réel. Quand la station de base forme les clusters, les cluster-
+Head diffusent les attributs, les seuils et le plan de transmission à tous les noeuds et effectuent
+également l’agrégation des données afin d’économiser de l’énergie.
+
+HEED
+
+Younes et Fahmy ont proposé un algorithme de clustering distribué appelé HEED pour
+les réseaux de capteurs. HEED ne fait aucune restriction sur la distribution et la densité des
+noeuds. Il ne dépend pas de la topologie du réseau ni de sa taille mais il suppose que les
+capteurs ont la possibilité de modifier leur puissance de transmission. HEED sélectionne les
+cluster-heads selon un critère hybride regroupant l’énergie restante des noeuds et un second
+paramètre tel que le degré des noeuds. Il vise à réaliser une distribution uniforme des clusters
+Head dans le réseau et à générer des clusters équilibrés en taille. Son problème réside dans la
+détermination du nombre optimal des clusters. De plus, HEED ne précise pas de protocole
+particulier à utiliser pour la communication entre les clusters Head et le sink. A l’intérieur du
+cluster, le problème ne se pose pas car la communication entre les membres du cluster et le
+cluster head est directe (à un saut). D’autre part, avec HEED, la topologie en clusters ne
+réalise pas de consommation minimale d’énergie dans les communications intra-cluster et les
+clusters générés ne sont pas équilibrés en taille.
