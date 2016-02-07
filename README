@@ -1,1 +1,19 @@
-BJR
+projet tuto : Implémentation d’un protocole de routage hiérarchique sous TinyOS
+
+partie 1  à présenter le 20/01
+ 
+==>Le but du projet : Il consiste à étudier les protocoles de routage dans les réseaux de capteurs sans fils (RCSF) et d’implémenter
+le protocole LEACH (Low-EnergyAdaptive Clustering Hierarchy).
+
+
+==>Problématique : L’énergie est un grand problème dans la conception d’un RCSF ,les applications exigent que la durée de vie du réseau
+soit de l’ordre de plusieurs mois ou même des années et les noeuds capteurs restent en permanence en activité, leur batteries peuvent
+fonctionner juste pour quelques jours ou pour quelques semaines.
+
+
+==>Solution : Implémenter un protocole de routage qui a pour objectif la minimisation de la consommation d’énergie des noeuds capteurs 
+et étendre la durée de vie duréseau.
+
+liens utils::
+-https://fr.wikipedia.org/wiki/R%C3%A9seau_de_capteurs_sans_fil
+-http://www.irisa.fr/prive/bcousin/Enseignement/2011-2012/R%C3%A9seaux%20de%20Capteurs.Presentation.2P.pdf
