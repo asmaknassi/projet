@@ -1,0 +1,29 @@
+définition RCSF
+
+
+Les réseaux de capteurs sans fil (Wireless Sensor Network - WSN) sont un type
+particulier de réseau Ad-hoc (réseaux sans fil capables de s’organiser sans infrastructure
+définie préalablement), dans lesquels les noeuds sont des "capteurs intelligents". Ils se
+composent généralement d’un grand nombre de capteurs communicants entre eux via des
+liens radio et capables de récolter et de transmettre des données environnementales d’une
+manière autonome. Dans ce type de réseau, les capteurs échangent des informations par
+exemple sur l’environnement pour construire une vue globale de la région contrôlée, qui est
+rendue accessible à l’utilisateur externe par un ou plusieurs noeuds.
+
+Architecture des réseaux de capteurs sans fils
+
+Un RCSF est composé d’un ensemble de noeuds capteurs. Ces noeuds capteurs sont
+habituellement dispersés dans une zone de capture organisé en champs "sensor fields" .
+Chacun de ces noeuds a la capacité de collecter des données et de les transférer au noeud
+passerelle (puits) par l’intermédiaire d’une architecture multi-sauts. Le puits transmet ensuite
+ces données par Internet ou par satellite à l’ordinateur central "Gestionnaire de tâches "
+
+Domaines d’application des RCSFs
+
+Les domaines d'applications de cette technologie sont multiples. Par exemple :
+le domaine militaire : détection et collecte d'informations sur la position de l'ennemi, surveillance des zones hostiles (contaminées), détection d'agents chimiques, bactériologiques...
+	l'environnement : pour la detection des feux de forêt, pour le contrôle de la qualité de l'eau ou de l'air
+	le bâtiment : lors de tremblements de terre, pour aider les secouristes à retrouver les victimes (capteurs emprisonnés dans le béton à la construction qui detectent le niveau de bruit)
+	le domaine de l'industrie : gestion des stocks
+	le domaine des transports : gestion du trafic
+	le domaine médical : pour contrôler le rythme cardiaque des patients
