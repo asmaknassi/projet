@@ -1,0 +1,13 @@
+module MHLeachPSM
+{
+provides
+{
+interface StdControl;
+}
+uses
+{ interface ReceiveMsg as LEACH_ReceiveMsg;
+interface SendMsg as LEACH_SendMsg;
+interface ReceiveMsg as ANNONCE_ReceiveMsg; //utiliser par les CH pour annoncer aux noeuds qu'ils sont les chefs
+interface SendMsg as ANNONCE_SendMsg; //réception des noeuds membre des nouveau CH
+interface ReceiveMsg as ORGANISATION_ReceiveMsg; //réception des CH les msg de ses membres
+interface SendMsg as ORGANISATION_SendMsg; //envoie des noeuds aux CH auxquels ils compte appartenir
