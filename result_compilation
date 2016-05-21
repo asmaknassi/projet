@@ -1,0 +1,91 @@
+maxseen 9
+Mote 0, cpu total: 333.676642
+Mote 0, radio total: 440.560679
+Mote 0, adc total: 0.000000
+Mote 0, leds total: 0.000000
+Mote 0, sensor total: 0.000000
+Mote 0, eeprom total: 0.000000
+Mote 0, cpu_cycle total: 0.000000
+Mote 0, Total energy: 774.237321
+
+Mote 1, cpu total: 333.676642
+Mote 1, radio total: 404.632332
+Mote 1, adc total: 0.000000
+Mote 1, leds total: 0.000000
+Mote 1, sensor total: 0.000000
+Mote 1, eeprom total: 0.000000
+Mote 1, cpu_cycle total: 0.000000
+Mote 1, Total energy: 738.308974
+
+Mote 2, cpu total: 333.676642
+Mote 2, radio total: 415.083202
+Mote 2, adc total: 0.000000
+Mote 2, leds total: 0.000000
+Mote 2, sensor total: 0.000000
+Mote 2, eeprom total: 0.000000
+Mote 2, cpu_cycle total: 0.000000
+Mote 2, Total energy: 748.759844
+
+Mote 3, cpu total: 333.676642
+Mote 3, radio total: 560.461472
+Mote 3, adc total: 0.000000
+Mote 3, leds total: 0.000000
+Mote 3, sensor total: 0.000000
+Mote 3, eeprom total: 0.000000
+Mote 3, cpu_cycle total: 0.000000
+Mote 3, Total energy: 894.138114
+
+Mote 4, cpu total: 333.676642
+Mote 4, radio total: 568.162328
+Mote 4, adc total: 0.000000
+Mote 4, leds total: 0.000000
+Mote 4, sensor total: 0.000000
+Mote 4, eeprom total: 0.000000
+Mote 4, cpu_cycle total: 0.000000
+Mote 4, Total energy: 901.838969
+
+Mote 5, cpu total: 298.355190
+Mote 5, radio total: 469.144604
+Mote 5, adc total: 0.000000
+Mote 5, leds total: 0.000000
+Mote 5, sensor total: 0.000000
+Mote 5, eeprom total: 0.000000
+Mote 5, cpu_cycle total: 0.000000
+Mote 5, Total energy: 767.499793
+
+Mote 6, cpu total: 298.355190
+Mote 6, radio total: 376.839819
+Mote 6, adc total: 0.000000
+Mote 6, leds total: 0.000000
+Mote 6, sensor total: 0.000000
+Mote 6, eeprom total: 0.000000
+Mote 6, cpu_cycle total: 0.000000
+Mote 6, Total energy: 675.195009
+
+Mote 7, cpu total: 298.355190
+Mote 7, radio total: 490.445988
+Mote 7, adc total: 0.000000
+Mote 7, leds total: 240.888493
+Mote 7, sensor total: 0.000000
+Mote 7, eeprom total: 0.000000
+Mote 7, cpu_cycle total: 0.000000
+Mote 7, Total energy: 1029.689670
+
+Mote 8, cpu total: 298.355190
+Mote 8, radio total: 508.038887
+Mote 8, adc total: 0.000000
+Mote 8, leds total: 0.000000
+Mote 8, sensor total: 0.000000
+Mote 8, eeprom total: 0.000000
+Mote 8, cpu_cycle total: 0.000000
+Mote 8, Total energy: 806.394077
+
+Mote 9, cpu total: 245.971041
+Mote 9, radio total: 418.788736
+Mote 9, adc total: 0.000000
+Mote 9, leds total: 0.000000
+Mote 9, sensor total: 0.000000
+Mote 9, eeprom total: 0.000000
+Mote 9, cpu_cycle total: 0.000000
+Mote 9, Total energy: 664.759777
+
